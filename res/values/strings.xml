@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Stereomood</string>
+    <string name="app_name">Streammood</string>
     <string name="oauth_consumer_key">a678842843b9f99ab204d6401201dfb404cacb4e9</string>
     <string name="oauth_consumer_secret">f396b3b0a0dee03a88dbf1fb6be5156a</string>
     <string name="request_token_url">http://www.stereomood.com/api/oauth/request_token</string>
