@@ -68,6 +68,20 @@ public class StereomoodClient {
 		return songs;
 	}
 	
+	public HashMap<String, String> getLibrarySongs() throws Exception {
+		HashMap<String, String> songs = new HashMap<String, String>();
+
+		RESTCall call = new RESTCall(service, token, StereomoodClient.base_url, "user/library/songs", Verb.GET);
+		JSONObject pdata = (JSONObject) call.call();
+		JSONArray data = pdata.getJSONArray("songs");
+		
+		for(int ii = 0; ii < data.length(); ii++){
+			songs.put(data.getJSONObject(ii).getString("title"), data.getJSONObject(ii).getString("id"));
+		}
+		
+		return songs;
+	}
+	
 	public HashMap<String, String> getSong(String id) throws Exception {
 		HashMap<String, String> data = new HashMap<String, String>();
 		

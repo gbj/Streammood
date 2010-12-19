@@ -1,5 +1,8 @@
 package com.gbj.stereomood;
 
+import java.util.HashMap;
+import java.util.Iterator;
+
 import org.scribe.model.Token;
 
 import android.app.ListActivity;
@@ -50,4 +53,14 @@ public class StereomoodListActivity extends ListActivity {
     		return false;
     	}
     }
+    
+	public Bundle bundleFromStringHashmap(HashMap<String, String> map) {
+		Iterator<String> iterator = map.keySet().iterator();
+		Bundle bundle = new Bundle();
+		while(iterator.hasNext()) {
+			String next = (String) iterator.next();
+			bundle.putString(next, map.get(next));
+		}
+		return bundle;
+	}
 }

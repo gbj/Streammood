@@ -2,4 +2,3 @@ TODO
 * 12/18/2010 - Fix player layout
 * 12/18/2010 - Have a "Now Playing," or a way to get back to the song that's playing at the moment\
 * 12/18/2010 - Add Tags->Songs
-* 12/18/2010 - Add Library

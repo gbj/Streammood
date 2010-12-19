@@ -1,5 +1,7 @@
 package com.gbj.stereomood;
 
+import java.util.HashMap;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -56,6 +58,14 @@ public class Stereomood extends StereomoodListActivity {
 					Stereomood.this.startActivity(next);
 					break;
 				case LIBRARY:
+					try {
+						HashMap<String, String> songs = client.getLibrarySongs();
+						next = new Intent(Stereomood.this, Songs.class);
+						next.putExtra("songs", bundleFromStringHashmap(songs));
+						Stereomood.this.startActivity(next);
+					} catch (Exception e) {
+						error(e.toString());
+					}
 					break;
 				}
 			} catch (Exception e) {

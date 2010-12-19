@@ -1,7 +1,6 @@
 package com.gbj.stereomood;
 
 import java.util.HashMap;
-import java.util.Iterator;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -45,15 +44,5 @@ public class Playlists extends StereomoodListActivity {
 		    	
 		    }
 		  });
-	}
-	
-	public Bundle bundleFromStringHashmap(HashMap<String, String> map) {
-		Iterator<String> iterator = map.keySet().iterator();
-		Bundle bundle = new Bundle();
-		while(iterator.hasNext()) {
-			String next = (String) iterator.next();
-			bundle.putString(next, map.get(next));
-		}
-		return bundle;
 	}
 }
