@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<TextView android:text="@string/login_directions"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content">
+	</TextView>
+	
+	<Button android:text="@string/authorize_button"
+		android:id="@+id/authorize_button"
+		android:clickable="false"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	</Button>
+	
+	<TextView android:layout_height="wrap_content"
+		android:text="@string/pin"
+		android:id="@+id/TextView01"
+		android:layout_width="wrap_content">
+	</TextView>
+	<EditText android:text=""
+		android:id="@+id/pin_input"
+		android:layout_height="wrap_content" android:layout_width="match_parent">
+	</EditText>
+	<Button android:text="@string/login_button"
+		android:id="@+id/login_button"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	</Button>
+
+
+
+</LinearLayout>

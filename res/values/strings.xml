@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stereomood</string>
+    <string name="oauth_consumer_key">a678842843b9f99ab204d6401201dfb404cacb4e9</string>
+    <string name="oauth_consumer_secret">f396b3b0a0dee03a88dbf1fb6be5156a</string>
+    <string name="request_token_url">http://www.stereomood.com/api/oauth/request_token</string>
+    <string name="access_token_url">http://www.stereomood.com/api/oauth/authenticate</string>
+    <string name="authorize_url">http://www.stereomood.com/api/oauth/authorize</string>
+    <string name="download_message">Downloading...</string>
+    <string name="error_message">Error!</string>
+    <string-array name="categories_array">
+      <item>Tags</item>
+      <item>Playlists</item>
+      <item>Library</item>
+    </string-array>
+
+<string name="pin">PIN: </string>
+<string name="login_button">Login</string>
+<string name="login_directions">Click the &quot;Authorize&quot; button below to launch the Stereomood website. Log in and note the PIN you are assigned. Return to this application, enter to PIN below, and click &quot;Login.&quot;</string>
+<string name="authorize_button">Authorize</string>
+
+
+
+
+<string name="stereomood_login">Stereomood - Login</string>
+<string name="stereomood_tags">Stereomood - Tags</string>
+<string name="stereomood_playlists">Stereomood - Playlists</string>
+<string name="title_unknown">Untitled</string>
+<string name="artist_unknown">Unknown Artist</string>
+<string name="album_unknown">Unknown Album</string>
+<string name="error_saving_user">Sorry, we ran into an error saving your user information. Try restarting the application and logging in again!</string>
+</resources>
