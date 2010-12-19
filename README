@@ -1,0 +1,3 @@
+Streammood is an Android Stereomood client. Currently the implementation is fairly rudimentary; you can only see tags, can't access your library at all, and can play single songs out of playlists.
+
+That said, I've only been working on it for two days.
